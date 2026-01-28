@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  
+  body {
+    background: radial-gradient(circle at top, #243447, #101826);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .app {
+    background: linear-gradient(145deg,#1f293b,#2b3648);
+    padding: 34px;
+    width: 460px;
+    border-radius: 24px;
+    box-shadow:
+      0 30px 60px rgba(0,0,0,0.6),
+      inset 0 0 10px rgba(255,255,255,0.04);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 24px;
+    color: #c7d2fe;
+  }
+  
+  .input-box {
+    background: linear-gradient(145deg,#2f3b52,#263044);
+    border-radius: 18px;
+    padding: 14px;
+    display: flex;
+    gap: 12px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.6);
+  }
+  
+  .inputs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .inputs input {
+    border: none;
+    outline: none;
+    padding: 11px 14px;
+    border-radius: 12px;
+    background: #0f172a;
+    color: #e5e7eb;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  }
+  
+  .inputs input::placeholder {
+    color: #94a3b8;
+  }
+  
+  .inputs input:focus {
+    outline: 2px solid #38bdf8;
+  }
+  
+  
+  .input-box button {
+    background: linear-gradient(145deg,#fb7185,#f59e0b);
+    border: none;
+    border-radius: 16px;
+    width: 58px;
+    font-size: 22px;
+    color: #1f2933;
+    cursor: pointer;
+    box-shadow: 0 10px 22px rgba(251,113,133,0.5);
+    transition: 0.25s ease;
+  }
+  
+  .input-box button:hover {
+    transform: translateY(-4px) scale(1.05);
+  }
+  
+ 
+  ul {
+    list-style: none;
+    margin-top: 26px;
+  }
+  
+
+  li {
+    background: linear-gradient(145deg,#263247,#1e293b);
+    margin-bottom: 14px;
+    padding: 14px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 12px 26px rgba(0,0,0,0.5);
+  }
+  
+
+  .task-info span {
+    font-weight: 600;
+    color: #f8fafc;
+  }
+  
+  .task-info small {
+    opacity: 0.7;
+    font-size: 11px;
+    color: #cbd5f5;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: #94a3b8;
+  }
+  
+ 
+  .actions button {
+    border: none;
+    padding: 7px 11px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.25s;
+  }
+  
+  .actions button:hover {
+    transform: scale(1.15);
+  }
+  
+
+  .done {
+    background: linear-gradient(#34d399,#10b981);
+    color: #022c22;
+  }
+  
+  .edit {
+    background: linear-gradient(#fde68a,#facc15);
+    color: #422006;
+  }
+  
+  .delete {
+    background: linear-gradient(#f87171,#ef4444);
+    color: white;
+  }
